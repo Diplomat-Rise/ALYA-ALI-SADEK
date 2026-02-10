@@ -1,15 +1,12 @@
-
-
 function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:HUSSAM OUSAMA ASAAD 
+FN:ALYA ALI SADEK
 TITLE:Sales Manager
 ORG:RISE Properties
-TEL;TYPE=WORK,VOICE:+971589826204
-TEL;TYPE=WORK,VOICE:+971589826204
-EMAIL:Ahmed.Uzair@riseproperties.ae
+TEL;TYPE=WORK,VOICE:+971‬‬‬‬526113198‬‬
+EMAIL:alyabranch@riseproperties.ae
 URL:http://www.riseproperties.ae
 ADR;TYPE=WORK:;;PO Box No 181702, Office NO.1607, Opal Tower, Business Bay;Dubai;;UAE
 END:VCARD
@@ -20,7 +17,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'HUSSAM OUSAMA ASAAD.vcf';
+  a.download = 'ALYA ALI SADEK.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -31,4 +28,5 @@ document.querySelector('.save-contact-button').addEventListener('click', functio
   e.preventDefault();
   downloadVCard();
 });
+
 
